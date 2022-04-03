@@ -1,9 +1,16 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Homepage } from './pages';
+import {Navbar,Footer} from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h1>Boolean Quizzo</h1>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage/>} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
