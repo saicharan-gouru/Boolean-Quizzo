@@ -1,7 +1,6 @@
 import "./Footer.css";
-import { AiFillLinkedin } from 'react-icons/ai';
-import { AiFillTwitterCircle} from 'react-icons/ai';
-import {AiFillGithub} from 'react-icons/ai';
+import { AiFillLinkedin,AiFillTwitterCircle,AiFillGithub } from 'react-icons/ai';
+
 
 
 function Footer(){
@@ -15,7 +14,7 @@ function Footer(){
                 <a href="https://github.com/saicharan-gouru/" target="_blank" rel="noopener noreferrer"><AiFillGithub className="social-media-icon" style={{ fontSize: "30px" }} /></a>
             </div>
             <p>Made with 💖 by  <a className="footer-credits" href="https://saicharangouru.netlify.app" target="_blank" rel="noopener noreferrer"> Saicharan Gouru </a></p>
-            <small>ⓒ Spazeir Mart | 2022</small>
+            <small>ⓒ Boolean Quizzo | 2022</small>
          </footer>
     </div>
     );
