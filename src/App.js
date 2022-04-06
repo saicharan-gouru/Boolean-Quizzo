@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import { Homepage, CategoriesPage} from './pages';
+import { Homepage, CategoriesPage, RulesPage} from './pages';
 import {Navbar,Footer} from "./components";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage/>} />
         <Route path="/categories" element={<CategoriesPage/>} />
+        <Route path="/rules" element={<RulesPage/>} />
       </Routes>
       <Footer />
     </div>
