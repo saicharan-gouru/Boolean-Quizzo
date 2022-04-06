@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import { Homepage } from './pages';
+import { Homepage, CategoriesPage} from './pages';
 import {Navbar,Footer} from "./components";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage/>} />
+        <Route path="/categories" element={<CategoriesPage/>} />
       </Routes>
       <Footer />
     </div>
