@@ -6,15 +6,15 @@ export const categories = [{
     },
     {
         id: 2,
-        title: "Sports",
+        title: "Film",
         difficulty: "easy",
-        categoryNumber: 21,
+        categoryNumber: 11,
     },
     {
         id: 3,
-        title: "Vehicles",
+        title: "Video games",
         difficulty: "easy",
-        categoryNumber: 28,
+        categoryNumber: 15,
     },
     {
         id: 4,
@@ -24,32 +24,32 @@ export const categories = [{
     },
     {
         id: 5,
-        title: "Mythology",
+        title: "Telivision",
         difficulty: "medium",
-        categoryNumber: 20,
+        categoryNumber: 14,
     },
     {
         id: 6,
-        title: "Politics",
+        title: "Science & Nature",
         difficulty: "medium",
-        categoryNumber: 24,
+        categoryNumber: 17,
     },
     {
         id: 7,
         title: "Computers",
-        difficulty: "hard",
+        difficulty: "easy",
         categoryNumber: 18,
     },
     {
         id: 8,
-        title: "Books",
-        difficulty: "hard",
-        categoryNumber: 10,
+        title: "Music",
+        difficulty: "medium",
+        categoryNumber: 12,
     },
     {
         id: 9,
-        title: "Celebrities",
-        difficulty: "hard",
-        categoryNumber: 26,
+        title: "Geography",
+        difficulty: "medium",
+        categoryNumber: 22,
     }
 ]
