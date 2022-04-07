@@ -1,0 +1,13 @@
+.questions-container {
+    padding: 2rem;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.question {
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
