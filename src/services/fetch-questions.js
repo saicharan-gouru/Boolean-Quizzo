@@ -10,7 +10,7 @@ const fetchQuestionsByCategory = async(
         const { data } = await axios.get(
             `https://opentdb.com/api.php?amount=10&category=${categoryNumber}&difficulty=${difficulty}&type=boolean`
         );
-
+        console.log(data.results)
         navigate("/rules");
         questionsDispatch({
             type: "ADD_QUESTIONS",

@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
-import {QuestionsProvider, CurrentQuestionContextProvider} from "./contexts";
+import {QuestionsProvider} from "./contexts";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <QuestionsProvider>
-        <CurrentQuestionContextProvider>
+
           <App />
-        </CurrentQuestionContextProvider>
+    
       </QuestionsProvider>
     </BrowserRouter>
   </React.StrictMode>,

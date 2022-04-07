@@ -1,29 +1,25 @@
 import "./Quiz.css";
-import {useQuestions,useCurrentQuestion} from "../../contexts";
-import {Question} from "./components/Question";
+import {Link} from "react-router-dom";
+import {useQuestions} from "../../contexts";
+
 
 function Quiz(){
-
-
-    const {questions} = useQuestions();
-
-    const {currentQuestion,score} = useCurrentQuestion();
+    const {questions, questionsDispatch} = useQuestions();
 
     return(
-        <div>
+        <div className="questions-container">
             <h1>Play Quiz</h1>
+            <Link to="/categories"><button className="button primary-red">Quit</button></Link>
             {
-            questions ?
-            <Question
-            categoryname={questions[0].category}
-            currentQuestion={currentQuestion}
-            incorrectAnswers={questions[currentQuestion].incorrect_answers}
-            correctAnswer={questions[currentQuestion].correct_answer}
-            questionBank={questions}
-            score={score}
-            /> : console.log("wait")
+            questions.map(item =>
+            <div className="question">
+                <h3>{item.question}</h3>
+                <label><input type="radio" name={item.question} onChange={() => questionsDispatch({type:"TRUE",payload:item})} />True </label>
+                <label><input type="radio"  name={item.question} onChange={() =>{ questionsDispatch({type:"FALSE",payload:item}) }} />False</label>
+            </div>
+            )
             }
-
+            <Link to="/results"><button className="button primary-green">Sumit and Get Results</button></Link>
         </div>
     );
 }

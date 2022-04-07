@@ -13,7 +13,7 @@ function CategoryCard({item}){
         <div className="category-card">
             <h1>{title}</h1>
             <p>Difficulty : {difficulty}</p>
-            <button className="button primary-blue" onClick={() => fetchQuestionsByCategory(categoryNumber,difficulty,navigate,questionsDispatch) }>Play now</button>
+            <button className="button primary-blue" onClick={() => {fetchQuestionsByCategory(categoryNumber,difficulty,navigate,questionsDispatch)} }>Play now</button>
         </div>
     );
 }

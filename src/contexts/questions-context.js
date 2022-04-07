@@ -5,10 +5,10 @@ const QuestionsContext = createContext();
 
 function QuestionsProvider({children}){
 
-    const [{questions},questionsDispatch] = useReducer(questionsReducer,{questions:[]});
+    const [{questions,score},questionsDispatch] = useReducer(questionsReducer,{questions:[],score:0});
 
     return(
-        <QuestionsContext.Provider value={{questions,questionsDispatch}}>
+        <QuestionsContext.Provider value={{questions,questionsDispatch,score}}>
             {children}
         </QuestionsContext.Provider>
     );
