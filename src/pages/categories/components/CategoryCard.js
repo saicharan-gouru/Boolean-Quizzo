@@ -1,14 +1,19 @@
 import "./CategoryCard.css";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import {fetchQuestionsByCategory} from "../../../services";
+import {useQuestions} from "../../../contexts";
 
 function CategoryCard({item}){
 
-    const {title,difficulty} = item;
+    const {title,difficulty,categoryNumber} = item;
+    const navigate = useNavigate();
+    const {questionsDispatch} = useQuestions();
+
     return(
         <div className="category-card">
             <h1>{title}</h1>
             <p>Difficulty : {difficulty}</p>
-            <Link to="/rules"><button className="button primary-blue">Play now</button></Link>
+            <button className="button primary-blue" onClick={() => fetchQuestionsByCategory(categoryNumber,difficulty,navigate,questionsDispatch) }>Play now</button>
         </div>
     );
 }
