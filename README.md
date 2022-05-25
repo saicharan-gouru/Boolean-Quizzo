@@ -4,7 +4,7 @@
   
 </div>
 
-Boolean Quizzo is an quizz application with various categories.
+Boolean Quizzo is a quizz application with various categories.
 
 ## Demo
 
