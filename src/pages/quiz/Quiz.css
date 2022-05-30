@@ -1,7 +1,5 @@
 .questions-container {
     padding: 2rem;
-    height: 100vh;
-    overflow: scroll;
 }
 
 .question {

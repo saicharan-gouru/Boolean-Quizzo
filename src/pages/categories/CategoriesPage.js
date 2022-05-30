@@ -1,8 +1,10 @@
 import "./CategoriesPage.css";
 import {categories} from "../../data/categories";
 import {CategoryCard} from "../index";
+import {useDocumentTitle} from "../../customhooks";
 
 function CategoriesPage(){
+    useDocumentTitle("Categories");
     return(
     <div>
         <h1>Categories</h1>

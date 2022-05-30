@@ -1,19 +1,21 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Homepage, CategoriesPage, RulesPage, Quiz, Results} from './pages';
-import {Navbar,Footer} from "./components";
+import {Navbar,Footer,ScrollToTop} from "./components";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage/>} />
-        <Route path="/categories" element={<CategoriesPage/>} />
-        <Route path="/rules" element={<RulesPage/>} />
-        <Route path="/play" element={<Quiz/>} />
-        <Route path="/results" element={<Results/>} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Homepage/>} />
+          <Route path="/categories" element={<CategoriesPage/>} />
+          <Route path="/rules" element={<RulesPage/>} />
+          <Route path="/play" element={<Quiz/>} />
+          <Route path="/results" element={<Results/>} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </div>
   );

@@ -1,9 +1,11 @@
 import "./Quiz.css";
 import {Link} from "react-router-dom";
 import {useQuestions} from "../../contexts";
+import {useDocumentTitle} from "../../customhooks";
 
 
 function Quiz(){
+    useDocumentTitle("Quiz");
     const {questions, questionsDispatch} = useQuestions();
 
     return(
