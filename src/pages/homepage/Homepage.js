@@ -1,8 +1,10 @@
 import "./Homepage.css";
 import {Link} from "react-router-dom";
+import {useDocumentTitle} from "../../customhooks";
 
 
 function Homepage(){
+    useDocumentTitle("Boolean Quizzo | Home")
     return(
         <div className="main-container">
             <div>
