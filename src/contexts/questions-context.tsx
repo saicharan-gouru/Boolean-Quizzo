@@ -1,15 +1,18 @@
 import { createContext, useContext, useReducer } from "react";
 import { questionsReducer } from "../reducers";
 import React from 'react';
+import { ReactChildrenType,QuizContextType } from "../types";
 
-const QuestionsContext = createContext();
 
-function QuestionsProvider({children}){
 
-    const [{questions,score},questionsDispatch] = useReducer(questionsReducer,{questions:[],score:0});
+const QuestionsContext = createContext({} as QuizContextType );
+
+function QuestionsProvider({children}:ReactChildrenType){
+
+    const [questionsState,questionsDispatch] = useReducer(questionsReducer,{questions:[],score:0});
 
     return(
-        <QuestionsContext.Provider value={{questions,questionsDispatch,score}}>
+        <QuestionsContext.Provider value={{questionsState,questionsDispatch}}>
             {children}
         </QuestionsContext.Provider>
     );

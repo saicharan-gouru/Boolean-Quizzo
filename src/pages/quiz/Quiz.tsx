@@ -5,10 +5,10 @@ import {useDocumentTitle} from "../../customhooks";
 import React from 'react';
 
 
-function Quiz(){
+function Quiz():JSX.Element{
     useDocumentTitle("Quiz");
-    const {questions, questionsDispatch} = useQuestions();
-
+    const {questionsState, questionsDispatch} = useQuestions();
+    const {questions} = questionsState;
     return(
         <div className="questions-container">
             <h1>Play Quiz</h1>

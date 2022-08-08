@@ -4,7 +4,7 @@ import { Homepage, CategoriesPage, RulesPage, Quiz, Results} from './pages';
 import {Navbar,Footer,ScrollToTop} from "./components";
 import React from 'react'
 
-function App() {
+function App():JSX.Element {
   return (
     <div className="App">
       <Navbar />

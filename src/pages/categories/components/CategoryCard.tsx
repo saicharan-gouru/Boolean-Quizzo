@@ -4,7 +4,8 @@ import {fetchQuestionsByCategory} from "../../../services";
 import {useQuestions} from "../../../contexts";
 import React from 'react';
 
-function CategoryCard({item}){
+
+function CategoryCard({item}:any):JSX.Element{
 
     const {title,difficulty,categoryNumber} = item;
     const navigate = useNavigate();

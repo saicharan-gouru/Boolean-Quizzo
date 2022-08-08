@@ -1,4 +1,6 @@
-export const rules = [{
+import { Rule } from "../types";
+
+export const rules:Rule[] = [{
         id: 1,
         title: "This category has 10 questions.",
     },

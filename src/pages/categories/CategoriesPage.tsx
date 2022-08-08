@@ -4,7 +4,7 @@ import {CategoryCard} from "../index";
 import {useDocumentTitle} from "../../customhooks";
 import React from 'react';
 
-function CategoriesPage(){
+function CategoriesPage():JSX.Element{
     useDocumentTitle("Categories");
     return(
     <div>

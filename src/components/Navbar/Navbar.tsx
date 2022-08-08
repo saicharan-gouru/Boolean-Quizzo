@@ -2,7 +2,7 @@ import "./Navbar.css";
 import {Link} from "react-router-dom";
 import React from 'react';
 
-function Navbar(){
+function Navbar():JSX.Element{
 
     return(
         <div className="nav-bar">

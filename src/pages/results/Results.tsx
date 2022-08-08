@@ -7,8 +7,8 @@ import React from 'react'
 
 function Results(){
     useDocumentTitle("Results");
-    const {score,questions} = useQuestions();
-
+    const {questionsState} = useQuestions();
+    const {questions,score} = questionsState;
 
     return(
         <div className="results">
