@@ -1,4 +1,6 @@
-export function questionsReducer(state, { type, payload }) {
+import { QuizState,QuizActionType } from "../types";
+
+export function questionsReducer(state:QuizState, { type, payload }:QuizActionType) {
     switch (type) {
         case "ADD_QUESTIONS":
             return {...state, questions: [...payload], score: 0 }

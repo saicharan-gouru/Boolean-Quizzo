@@ -3,6 +3,7 @@ import "../../data/rules"
 import { rules } from "../../data/rules";
 import {Link} from "react-router-dom";
 import {useDocumentTitle} from "../../customhooks";
+import React from 'react'
 
 function RulesPage(){
     useDocumentTitle("Rules");

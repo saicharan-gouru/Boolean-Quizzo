@@ -1,10 +1,11 @@
 import axios from "axios";
+import { QuizActionType } from "../types";
 
 const fetchQuestionsByCategory = async(
-    categoryNumber,
-    difficulty,
-    navigate,
-    questionsDispatch
+    categoryNumber:number,
+    difficulty:string,
+    navigate:any,
+    questionsDispatch:React.Dispatch<QuizActionType>
 ) => {
     try {
         const { data } = await axios.get(
