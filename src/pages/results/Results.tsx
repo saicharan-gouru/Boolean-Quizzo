@@ -3,6 +3,7 @@ import "./Results.css";
 import {Link} from "react-router-dom";
 import {useQuestions} from "../../contexts";
 import {useDocumentTitle} from "../../customhooks";
+import React from 'react'
 
 function Results(){
     useDocumentTitle("Results");

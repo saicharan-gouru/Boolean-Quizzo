@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const fetchQuestionsByCategory = async(
-    categoryNumber,
+    categoryNumber:number,
     difficulty,
     navigate,
     questionsDispatch

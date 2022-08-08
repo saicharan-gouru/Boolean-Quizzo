@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { AiFillLinkedin,AiFillTwitterCircle,AiFillGithub } from 'react-icons/ai';
+import React from 'react';
 
 
 

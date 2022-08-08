@@ -2,6 +2,7 @@ import "./CategoryCard.css";
 import {useNavigate} from "react-router-dom";
 import {fetchQuestionsByCategory} from "../../../services";
 import {useQuestions} from "../../../contexts";
+import React from 'react';
 
 function CategoryCard({item}){
 

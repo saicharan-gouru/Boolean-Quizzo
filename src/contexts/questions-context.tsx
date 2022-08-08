@@ -1,5 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 import { questionsReducer } from "../reducers";
+import React from 'react';
 
 const QuestionsContext = createContext();
 
